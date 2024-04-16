@@ -4,6 +4,7 @@ import 'package:belajar_flutter/pages/pertemuan_03/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_04/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_05/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_06/main.dart';
+import 'package:belajar_flutter/pages/pertemuan_07/login_page.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -53,6 +54,12 @@ class MyHomePage extends StatelessWidget {
               description:
                   "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
               destination: Pertemuan06(),
+            ),
+            CardItem(
+              title: "Pertemuan 7",
+              description:
+                  "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
+              destination: LoginPage(),
             ),
           ],
         ),
