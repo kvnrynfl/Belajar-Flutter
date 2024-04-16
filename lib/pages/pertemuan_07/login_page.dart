@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'home_page.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class Pertemuan07 extends StatefulWidget {
+  const Pertemuan07({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<Pertemuan07> createState() => _Pertemuan07State();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _Pertemuan07State extends State<Pertemuan07> {
   final emailCtrl = TextEditingController();
   final passwordCtrl = TextEditingController();
 

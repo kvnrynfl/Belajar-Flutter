@@ -59,7 +59,7 @@ class MyHomePage extends StatelessWidget {
               title: "Pertemuan 7",
               description:
                   "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
-              destination: LoginPage(),
+              destination: Pertemuan07(),
             ),
           ],
         ),
