@@ -41,3 +41,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# private assets
+assets/images/background/*
+assets/images/profile/*
+assets/images/post/*
