@@ -59,7 +59,7 @@ class Pertemuan03 extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(10),
                     child: const Image(
-                      image: AssetImage("assets/images/gilbert_meninggoy.png"),
+                      image: AssetImage("assets/images/post/gilbert_meninggoy.png"),
                       width: 100,
                       height: 100,
                       fit: BoxFit.cover,

@@ -21,7 +21,10 @@ class Pertemuan02 extends StatelessWidget {
                 gradient: const LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: <Color>[Colors.white, Colors.blue],
+                  colors: <Color>[
+                    Colors.white,
+                    Colors.blue
+                  ],
                 ),
                 borderRadius: BorderRadius.circular(20)),
             margin: const EdgeInsets.all(10),

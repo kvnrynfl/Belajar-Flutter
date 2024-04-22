@@ -47,10 +47,7 @@ class _Pertemuan05State extends State<Pertemuan05> {
                 ),
                 const SizedBox(height: 10),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor: Colors.green,
-                      minimumSize: Size(_width, _height)),
+                  style: ElevatedButton.styleFrom(foregroundColor: Colors.white, backgroundColor: Colors.green, minimumSize: Size(_width, _height)),
                   onPressed: () {
                     setState(() {
                       _counter++;
@@ -60,10 +57,7 @@ class _Pertemuan05State extends State<Pertemuan05> {
                 ),
                 const SizedBox(height: 10),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor: Colors.red,
-                      minimumSize: Size(_width, _height)),
+                  style: ElevatedButton.styleFrom(foregroundColor: Colors.white, backgroundColor: Colors.red, minimumSize: Size(_width, _height)),
                   onPressed: () {
                     setState(() {
                       _counter--;
@@ -141,11 +135,10 @@ class _Pertemuan05State extends State<Pertemuan05> {
                   ),
                   onPressed: () {
                     setState(() {
-                      _hasil = double.parse(panjangCtrl.text) +
-                          double.parse(lebarCtrl.text);
-                      print(panjangCtrl.text);
-                      print(lebarCtrl.text);
-                      print(_hasil);
+                      _hasil = double.parse(panjangCtrl.text) + double.parse(lebarCtrl.text);
+                      // print(panjangCtrl.text);
+                      // print(lebarCtrl.text);
+                      // print(_hasil);
                     });
                   },
                   child: const Text("Hasil"),

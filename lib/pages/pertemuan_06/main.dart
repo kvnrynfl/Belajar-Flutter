@@ -47,11 +47,7 @@ class _Pertemuan06State extends State<Pertemuan06> {
   }
 
   void funcTampilPesan(String pesanTampil) {
-    Fluttertoast.showToast(
-        msg: pesanTampil,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1);
+    Fluttertoast.showToast(msg: pesanTampil, toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1);
   }
 
   void funcHitung() {
@@ -77,9 +73,9 @@ class _Pertemuan06State extends State<Pertemuan06> {
           hasil = 0;
       }
 
-      print(panjangCtrl.text);
-      print(lebarCtrl.text);
-      print(hasil);
+      // print(panjangCtrl.text);
+      // print(lebarCtrl.text);
+      // print(hasil);
     });
   }
 
@@ -96,7 +92,7 @@ class _Pertemuan06State extends State<Pertemuan06> {
               Container(
                 padding: const EdgeInsets.all(10),
                 child: const Image(
-                  image: AssetImage("assets/images/gilbert_meninggoy.png"),
+                  image: AssetImage("assets/images/post/gilbert_meninggoy.png"),
                   width: 100,
                   height: 100,
                   fit: BoxFit.cover,
@@ -176,10 +172,7 @@ class _Pertemuan06State extends State<Pertemuan06> {
           onPressed: () {
             funcTambah();
           },
-          style: ElevatedButton.styleFrom(
-              minimumSize: Size(lebarButton, tinggiButton),
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.green),
+          style: ElevatedButton.styleFrom(minimumSize: Size(lebarButton, tinggiButton), foregroundColor: Colors.white, backgroundColor: Colors.green),
           child: const Text(
             "Tambah",
             style: TextStyle(fontSize: 18),
@@ -189,10 +182,7 @@ class _Pertemuan06State extends State<Pertemuan06> {
           onPressed: () {
             funcKurang();
           },
-          style: ElevatedButton.styleFrom(
-              minimumSize: Size(lebarButton, tinggiButton),
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.red),
+          style: ElevatedButton.styleFrom(minimumSize: Size(lebarButton, tinggiButton), foregroundColor: Colors.white, backgroundColor: Colors.red),
           child: const Text(
             "Kurang",
             style: TextStyle(fontSize: 18),
@@ -281,10 +271,7 @@ class _Pertemuan06State extends State<Pertemuan06> {
           onPressed: () {
             funcHitung();
           },
-          style: ElevatedButton.styleFrom(
-              minimumSize: Size(lebarButton, tinggiButton),
-              foregroundColor: Colors.white,
-              backgroundColor: Colors.lightBlue),
+          style: ElevatedButton.styleFrom(minimumSize: Size(lebarButton, tinggiButton), foregroundColor: Colors.white, backgroundColor: Colors.lightBlue),
           child: const Text(
             "Hitung",
             style: TextStyle(fontSize: 18),

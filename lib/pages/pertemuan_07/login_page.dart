@@ -19,11 +19,7 @@ class _Pertemuan07State extends State<Pertemuan07> {
         return const HomePage();
       }));
     } else {
-      Fluttertoast.showToast(
-          msg: "Email / Password Salah",
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.CENTER,
-          timeInSecForIosWeb: 1);
+      Fluttertoast.showToast(msg: "Email / Password Salah", toastLength: Toast.LENGTH_SHORT, gravity: ToastGravity.CENTER, timeInSecForIosWeb: 1);
     }
   }
 
@@ -51,20 +47,14 @@ class _Pertemuan07State extends State<Pertemuan07> {
                   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                   child: TextFormField(
                     controller: emailCtrl,
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: "Email",
-                        prefixIcon: Icon(Icons.email)),
+                    decoration: const InputDecoration(border: OutlineInputBorder(), labelText: "Email", prefixIcon: Icon(Icons.email)),
                   ),
                 ),
                 Container(
                   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                   child: TextFormField(
                     controller: passwordCtrl,
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
-                        labelText: "Password",
-                        prefixIcon: Icon(Icons.lock)),
+                    decoration: const InputDecoration(border: OutlineInputBorder(), labelText: "Password", prefixIcon: Icon(Icons.lock)),
                     obscureText: true,
                     obscuringCharacter: '*',
                   ),
@@ -77,14 +67,10 @@ class _Pertemuan07State extends State<Pertemuan07> {
                     onPressed: () {
                       signIn();
                     },
-                    style:
-                        ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
                     child: const Text(
                       "Login",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
                 )
