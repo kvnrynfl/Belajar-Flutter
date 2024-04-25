@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/pages/ujian_tengah_semester/alert.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter/pages/pertemuan_01/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_02/main.dart';
@@ -18,11 +19,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   late StaticData userData;
+  late AlertToast alertToast;
 
   @override
   void initState() {
     super.initState();
     userData = StaticData();
+    alertToast = AlertToast();
   }
 
   @override
@@ -37,7 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildCardItem(
               title: "Ujian Tengah Semester",
               description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
-              destination: UjianTengahSemester(userData: userData),
+              destination: UjianTengahSemester(
+                userData: userData,
+                alertToast: alertToast,
+              ),
             ),
             _buildCardItem(
               title: "Pertemuan 1",
