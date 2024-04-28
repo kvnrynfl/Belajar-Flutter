@@ -96,6 +96,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.2.5"
+  font_awesome_flutter:
+    dependency: "direct main"
+    description:
+      name: font_awesome_flutter
+      sha256: "275ff26905134bcb59417cf60ad979136f1f8257f2f449914b2c3e05bbb4cd6f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "10.7.0"
+  go_router:
+    dependency: transitive
+    description:
+      name: go_router
+      sha256: "771c8feb40ad0ef639973d7ecf1b43d55ffcedb2207fd43fab030f5639e40446"
+      url: "https://pub.dev"
+    source: hosted
+    version: "13.2.4"
   leak_tracker:
     dependency: transitive
     description:
@@ -128,6 +144,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      sha256: "623a88c9594aa774443aa3eb2d41807a48486b5613e67599fb4c41c0ad47c340"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.0"
   matcher:
     dependency: transitive
     description:
@@ -160,6 +184,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
+  persistent_bottom_nav_bar_v2:
+    dependency: "direct main"
+    description:
+      name: persistent_bottom_nav_bar_v2
+      sha256: "5e5ebdf852e7e47b48e573bf867fa9c044cba870f1d2298c9ca7c9909875ee1d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.2.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -231,4 +263,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.0 <4.0.0"
-  flutter: ">=1.10.0"
+  flutter: ">=3.16.0"
