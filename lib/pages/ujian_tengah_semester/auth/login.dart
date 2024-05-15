@@ -121,9 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       const SizedBox(height: 20),
                       GestureDetector(
-                        onTap: () {
-                          // TODO: FORGOT PASSWORD DISINI BANG AYO IMPLEMENT
-                        },
+                        onTap: () {},
                         child: const Text(
                           'Forgot Password?',
                           style: TextStyle(
@@ -177,6 +175,7 @@ class _LoginPageState extends State<LoginPage> {
       userData.changeLoggedInStatus(true);
 
       Navigator.pushReplacement(
+        // ignore: use_build_context_synchronously
         context,
         MaterialPageRoute(builder: (context) {
           return UjianTengahSemester(

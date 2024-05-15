@@ -12,7 +12,7 @@ class _MessagePageState extends State<MessagePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Message Page'),
+        title: const Text('Message Page'),
       ),
       body: Center(
         child: ElevatedButton(
@@ -20,10 +20,10 @@ class _MessagePageState extends State<MessagePage> {
             // Navigate to add new contact page
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => AddContactPage()),
+              MaterialPageRoute(builder: (context) => const AddContactPage()),
             );
           },
-          child: Text('Add New Contact'),
+          child: const Text('Add New Contact'),
         ),
       ),
     );
@@ -31,13 +31,15 @@ class _MessagePageState extends State<MessagePage> {
 }
 
 class AddContactPage extends StatelessWidget {
+  const AddContactPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add New Contact'),
+        title: const Text('Add New Contact'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Form to add new contact goes here'),
       ),
     );
