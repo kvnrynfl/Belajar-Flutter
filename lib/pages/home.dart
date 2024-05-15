@@ -1,4 +1,3 @@
-import 'package:belajar_flutter/pages/ujian_tengah_semester/alert.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter/pages/pertemuan_01/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_02/main.dart';
@@ -7,7 +6,9 @@ import 'package:belajar_flutter/pages/pertemuan_04/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_05/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_06/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_07/login_page.dart';
+import 'package:belajar_flutter/pages/pertemuan_08/main.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/main.dart';
+import 'package:belajar_flutter/pages/ujian_tengah_semester/alert.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/static_data.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -79,6 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
               title: "Pertemuan 7",
               description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
               destination: const Pertemuan07(),
+            ),
+            _buildCardItem(
+              title: "Pertemuan 8",
+              description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
+              destination: const Pertemuan08(),
             ),
           ],
         ),
