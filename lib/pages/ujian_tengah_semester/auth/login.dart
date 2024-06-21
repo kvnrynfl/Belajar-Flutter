@@ -171,27 +171,32 @@ class _LoginPageState extends State<LoginPage> {
 
     await Future.delayed(const Duration(seconds: 2));
 
+    if (!mounted) return;
+
     if (phoneNumberController.text == userData.getPhoneNumber() && passwordController.text == userData.getPassword()) {
       userData.changeLoggedInStatus(true);
 
-      Navigator.pushReplacement(
-        // ignore: use_build_context_synchronously
-        context,
-        MaterialPageRoute(builder: (context) {
-          return UjianTengahSemester(
-            userData: userData,
-            alertToast: alertToast,
-          );
-        }),
-      );
+      if (mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) {
+            return UjianTengahSemester(
+              userData: userData,
+              alertToast: alertToast,
+            );
+          }),
+        );
+      }
 
       alertToast.custom("Login Success");
     } else {
       alertToast.custom("Invalid phone number or password");
     }
 
-    setState(() {
-      _isLoading = false;
-    });
+    if (mounted) {
+      setState(() {
+        _isLoading = false;
+      });
+    }
   }
 }
