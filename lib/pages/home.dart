@@ -7,6 +7,7 @@ import 'package:belajar_flutter/pages/pertemuan_05/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_06/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_07/login_page.dart';
 import 'package:belajar_flutter/pages/pertemuan_08/main.dart';
+import 'package:belajar_flutter/pages/pertemuan_09/main.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/main.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/alert.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/static_data.dart';
@@ -85,6 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
               title: "Pertemuan 8",
               description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
               destination: const Pertemuan08(),
+            ),
+            _buildCardItem(
+              title: "Pertemuan 9",
+              description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
+              destination: const Pertemuan09(),
             ),
           ],
         ),
