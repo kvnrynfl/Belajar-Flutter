@@ -11,6 +11,7 @@ import 'package:belajar_flutter/pages/pertemuan_09/main.dart';
 import 'package:belajar_flutter/pages/pertemuan_10_11_12/page_list.dart';
 import 'package:belajar_flutter/pages/pertemuan_13/page_artikel.dart';
 import 'package:belajar_flutter/pages/pertemuan_13/page_picture.dart';
+import 'package:belajar_flutter/pages/pertemuan_14/page_list.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/main.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/alert.dart';
 import 'package:belajar_flutter/pages/ujian_tengah_semester/static_data.dart';
@@ -109,6 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
               title: "Pertemuan 13 - Picture",
               description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
               destination: const PagePicture(),
+            ),
+            _buildCardItem(
+              title: "Pertemuan 14",
+              description: "Cupidatat non nostrud consequat qui qui cupidatat sunt ipsum ullamco consequat.",
+              destination: const Pertemuan14(),
             ),
           ],
         ),
