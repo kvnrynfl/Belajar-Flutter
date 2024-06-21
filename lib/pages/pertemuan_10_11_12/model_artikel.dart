@@ -1,4 +1,4 @@
-// ignore_for_file: non_constant_identifier_names, duplicate_ignore
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -7,14 +7,9 @@ class Artikel {
   int id;
   String title;
   String image;
-  // ignore: duplicate_ignore
-  // ignore: non_constant_identifier_names
   String description_short;
-  // ignore: non_constant_identifier_names
   String description_long;
-  // ignore: non_constant_identifier_names
   String created_by;
-  // ignore: non_constant_identifier_names
   String created_at;
 
   Artikel({
